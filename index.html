@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script
+      src="https://kit.fontawesome.com/3bfd3ce9e5.js"
+      crossorigin="anonymous"
+    ></script> 
+</head>
+<body>
+    <div class="grid">
+        <div class="turn yellow" data-id="turn">
+            <i class="fa-solid fa-check "></i>
+            <p class="turquoise" >player1,yourchance</p> 
+        </div>
+        <div class="actions" data-id="actions">
+            <button class:action-btn>
+                Actions<i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="items button hidden" data-id="items">
+                <button data-id="reset-btn">reset</button>
+                <button data-id="start-btn">start </button>
+            </div>
+        </div>
+        <div id="1"class="circle shadow"data-id="circle">
+        </div>
+        <div id="2"class="circle shadow" data-id="circle">
+        </div>
+        <div id="3"class="circle shadow" data-id="circle"></div>
+        <div id="4"class="circle shadow"data-id="circle"></div>
+        <div id="5"class="circle shadow" data-id="circle"></div>
+        <div id="6"class="circle shadow" data-id="circle"></div>
+        <div id="7"class="circle shadow" data-id="circle"></div>
+        <div id="8"class="circle shadow" data-id="circle"></div>
+        <div id="9"class="circle shadow" data-id="circle"></div>
+    </div>
+    <div class="model hidden " data-id="model">
+        <div class="model-content">
+            <p data-id="model-text">player1 wins</p>
+            <button data-id="model-btn">play again</button>
+        </div>
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>
